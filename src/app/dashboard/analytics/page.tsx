@@ -2,11 +2,14 @@
 
 import { Heading, View, Text } from '@aws-amplify/ui-react';
 
+// You MUST have 'export default' for Next.js to render the route
 export default function AnalyticsPage() {
   return (
-    <View className="space-y-6 p-4">
-      <Heading level={2} color="white">Career Insights</Heading>
-      <Text color="white/70">Your application data visualization will appear here.</Text>
+    <View className="p-8">
+      <Heading level={2} color="white">Career Analytics</Heading>
+      <Text color="white/70" marginTop="1rem">
+        This is where your job application trends will appear.
+      </Text>
     </View>
   );
 }

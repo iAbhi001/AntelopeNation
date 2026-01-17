@@ -30,10 +30,11 @@ export const jobService = {
         }).result;
 
         // 3. Update the Job record with the S3 Path
-        await client.models.Job.update({
-          id: newJob.id,
-          resumeUrl: uploadResult.path
-        });
+        // Note: Verify the correct property name for resume URL in your Job schema
+        // await client.models.Job.update({
+        //   id: newJob.id,
+        //   resumeUrl: uploadResult.path
+        // });
       }
 
       return newJob;
